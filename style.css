@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 15px;
+    line-height: 2.0em;
+    color: rgb(0, 0, 0);
+    background-attachment: fixed;
+}
+
+p{
+    font-size: larger;
+}
+
+
+
+img {
+    height: 300px;
+    border-radius: 10%;
+}
+
+
+footer {
+    padding: 5%;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+
+}
+
+.git {
+    width: 44px;
+    height: 24px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Índice de Massa Corporal</title>
+</head>
+
+<body
+    style="background-image: url(o-indice-de-massa-corporal-imc-e-impreciso-e-enganoso.png);">
+
+
+
+    <h1>IMC - Índice de Massa Corporal</h1>
+
+    <label for="altura">Altura:</label>
+    <input type="number" name="" id="altura">
+    <br>
+
+    <label for="peso">Peso (Kg):</label>
+    <input type="number" name="" id="peso">
+    <br>
+
+    <button onclick="calcularImc()">Calcular</button>
+
+    <p><strong>Seus Índice de massa corporal é:</strong><span id="resultado"></span></p>
+
+    <img src="halteres-no-chao-de-uma-academia-ai-generative_123827-23743.avif" alt="peso">
+
+    <img src="medida-de-altura-para-criancas-pequenas_29937-4198.avif" alt="altura">
+
+
+    <script>
+        function calcularImc() {
+            const altura = document.getElementById('altura').value;
+            const peso = document.getElementById('peso').value;
+            const imc = peso / (altura ** 2);
+
+            document.getElementById('resultado').textContent = imc.toFixed(2);
+        }
+    </script>
+
+    <footer>
+        Criado por: Marcos Vinicius| <img class="git" src="Headerbild-Was-ist-GitHub-v2.png" alt="">
+
+        GitHub: marcosvinicius-bit | Instagram: MarcosBR &reg;
+    </footer>
+</body>
+
+</html>
